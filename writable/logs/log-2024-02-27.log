@@ -1,0 +1,1405 @@
+INFO - 2024-02-27 01:23:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 01:23:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 01:23:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 01:23:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 01:23:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-27 01:23:40 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'db_kasir1' in D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_kasir1', 3306, '', 0)
+#1 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\ci4\vendor\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\ci4\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 D:\ci4\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#7 D:\ci4\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#8 D:\ci4\vendor\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#9 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+#10 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#11 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 D:\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\i...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'db_kasir1' in D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\ci4\vendor\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\ci4\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 D:\ci4\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#6 D:\ci4\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#7 D:\ci4\vendor\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#8 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+#9 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#10 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\i...')
+#13 {main}
+CRITICAL - 2024-02-27 01:23:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'db_kasir1'
+in VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php on line 428.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 3 VENDORPATH\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 4 VENDORPATH\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 5 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 6 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 7 VENDORPATH\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 01:24:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 01:24:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 01:24:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 01:24:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 01:24:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 01:24:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 01:24:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 01:24:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 01:24:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 01:24:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 01:24:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 01:28:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 01:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-27 01:52:49 --> ParseError: syntax error, unexpected token "if"
+in APPPATH\Controllers\Produk.php on line 160.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\ci4\\app\\Controllers\\Produk.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Produk')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Produk')
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Produk', true)
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 01:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 01:53:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 01:53:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 01:53:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-27 01:53:28 --> ParseError: syntax error, unexpected token "if"
+in APPPATH\Controllers\Produk.php on line 160.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\ci4\\app\\Controllers\\Produk.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Produk')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Produk')
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Produk', true)
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 01:58:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 01:58:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 01:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 01:58:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 01:58:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-27 01:58:46 --> ErrorException: Undefined property: App\Controllers\Produk::$produkLama
+in APPPATH\Controllers\Produk.php on line 119.
+ 1 APPPATH\Controllers\Produk.php(119): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Produk::$produkLama', 'D:\\ci4\\app\\Controllers\\Produk.php', 119)
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Produk->update('1')
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 01:59:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-27 01:59:46 --> ErrorException: Undefined variable $ruleNama
+in APPPATH\Controllers\Produk.php on line 135.
+ 1 APPPATH\Controllers\Produk.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ruleNama', 'D:\\ci4\\app\\Controllers\\Produk.php', 135)
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Produk->update('1')
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 02:01:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-27 02:01:05 --> ErrorException: Undefined variable $ruleNama
+in APPPATH\Controllers\Produk.php on line 135.
+ 1 APPPATH\Controllers\Produk.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ruleNama', 'D:\\ci4\\app\\Controllers\\Produk.php', 135)
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Produk->update('1')
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 02:01:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:01:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:01:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-27 02:01:12 --> ErrorException: Undefined variable $ruleNama
+in APPPATH\Controllers\Produk.php on line 135.
+ 1 APPPATH\Controllers\Produk.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ruleNama', 'D:\\ci4\\app\\Controllers\\Produk.php', 135)
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Produk->update('1')
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 02:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-27 02:03:04 --> ErrorException: Undefined variable $HargaJual
+in APPPATH\Controllers\Produk.php on line 150.
+ 1 APPPATH\Controllers\Produk.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $HargaJual', 'D:\\ci4\\app\\Controllers\\Produk.php', 150)
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Produk->update('1')
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 02:03:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:03:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:03:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:03:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:03:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:04:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:04:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:04:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:04:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:04:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:04:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:04:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:04:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:04:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:04:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:04:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:08:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:08:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:16:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:16:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:16:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:16:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:16:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:16:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:16:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:16:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:24:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:24:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:25:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:25:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:42:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:45:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-27 02:45:45 --> ParseError: syntax error, unexpected token "else"
+in APPPATH\Controllers\Produk.php on line 166.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\ci4\\app\\Controllers\\Produk.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Produk')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Produk')
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Produk', true)
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 02:46:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:46:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:46:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:47:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:47:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:48:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:48:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:48:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:48:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:48:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:48:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:53:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:53:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:53:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:53:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:53:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:53:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:53:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:53:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:53:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:53:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:53:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:53:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:54:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:54:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:54:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:54:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:54:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 02:54:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:10:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:11:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-27 03:11:09 --> ErrorException: Undefined variable $PodukID
+in APPPATH\Controllers\Produk.php on line 167.
+ 1 APPPATH\Controllers\Produk.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $PodukID', 'D:\\ci4\\app\\Controllers\\Produk.php', 167)
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Produk->update('1')
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 03:11:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:11:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:11:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:11:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:15:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:16:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:16:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:16:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:17:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:17:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:17:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:18:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:18:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:19:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:19:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:19:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:19:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:19:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:19:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:19:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:19:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:19:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:19:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:19:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:19:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:19:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:20:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:20:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:20:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:20:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:20:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:20:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:20:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:20:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:20:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:21:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:21:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:21:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:21:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:21:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:21:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:21:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:21:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:21:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:23:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:23:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:23:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:24:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-27 03:24:01 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\pengguna\edit.php on line 132.
+ 1 APPPATH\Views\pengguna\edit.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\ci4\\app\\Views\\pengguna\\edit.php', 132)
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(228): include('D:\\ci4\\app\\Views\\pengguna\\edit.php')
+ 3 VENDORPATH\codeigniter4\framework\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pengguna/edit', [], true)
+ 5 APPPATH\Controllers\Pengguna.php(82): view('pengguna/edit', [...])
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Pengguna->edit('dandi')
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengguna))
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 03:26:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:26:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:27:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:27:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:27:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:27:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:28:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:28:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:28:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:28:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:40:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:40:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-27 03:40:10 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\pengguna\edit.php on line 132.
+ 1 APPPATH\Views\pengguna\edit.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\ci4\\app\\Views\\pengguna\\edit.php', 132)
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(228): include('D:\\ci4\\app\\Views\\pengguna\\edit.php')
+ 3 VENDORPATH\codeigniter4\framework\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pengguna/edit', [], true)
+ 5 APPPATH\Controllers\Pengguna.php(82): view('pengguna/edit', [...])
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Pengguna->edit('dandi')
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengguna))
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 03:48:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:48:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-27 03:48:46 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\pengguna\edit.php on line 132.
+ 1 APPPATH\Views\pengguna\edit.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\ci4\\app\\Views\\pengguna\\edit.php', 132)
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(228): include('D:\\ci4\\app\\Views\\pengguna\\edit.php')
+ 3 VENDORPATH\codeigniter4\framework\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pengguna/edit', [], true)
+ 5 APPPATH\Controllers\Pengguna.php(82): view('pengguna/edit', [...])
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Pengguna->edit('dandi')
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengguna))
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 03:49:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:49:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:50:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:50:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:50:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:50:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:50:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:50:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:50:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:50:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:50:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:51:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:51:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:51:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:51:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:52:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:52:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:52:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:52:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:52:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:52:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-27 03:52:42 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\pengguna\edit.php on line 132.
+ 1 APPPATH\Views\pengguna\edit.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\ci4\\app\\Views\\pengguna\\edit.php', 132)
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(228): include('D:\\ci4\\app\\Views\\pengguna\\edit.php')
+ 3 VENDORPATH\codeigniter4\framework\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pengguna/edit', [], true)
+ 5 APPPATH\Controllers\Pengguna.php(82): view('pengguna/edit', [...])
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Pengguna->edit('dandi')
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengguna))
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 03:54:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:54:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-27 03:54:40 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\pengguna\edit.php on line 132.
+ 1 APPPATH\Views\pengguna\edit.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\ci4\\app\\Views\\pengguna\\edit.php', 132)
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(228): include('D:\\ci4\\app\\Views\\pengguna\\edit.php')
+ 3 VENDORPATH\codeigniter4\framework\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pengguna/edit', [], true)
+ 5 APPPATH\Controllers\Pengguna.php(82): view('pengguna/edit', [...])
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Pengguna->edit('dandi')
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengguna))
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 03:59:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:59:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 03:59:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:01:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:01:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:01:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:01:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:01:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:01:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:01:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:01:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:01:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:02:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:02:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:02:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:02:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:02:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:02:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-27 04:02:18 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\pengguna\edit.php on line 132.
+ 1 APPPATH\Views\pengguna\edit.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\ci4\\app\\Views\\pengguna\\edit.php', 132)
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(228): include('D:\\ci4\\app\\Views\\pengguna\\edit.php')
+ 3 VENDORPATH\codeigniter4\framework\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pengguna/edit', [], true)
+ 5 APPPATH\Controllers\Pengguna.php(82): view('pengguna/edit', [...])
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Pengguna->edit('dandi')
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengguna))
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 04:02:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:02:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:03:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:05:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:06:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:06:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:06:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:06:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:06:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:07:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:08:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:08:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:09:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:11:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:11:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:12:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:13:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:14:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:15:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:16:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:18:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:18:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:18:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:21:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-27 04:21:11 --> ErrorException: Undefined array key "PenjualanID"
+in APPPATH\Views\penjualan\index.php on line 225.
+ 1 APPPATH\Views\penjualan\index.php(225): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "PenjualanID"', 'D:\\ci4\\app\\Views\\penjualan\\index.php', 225)
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(228): include('D:\\ci4\\app\\Views\\penjualan\\index.php')
+ 3 VENDORPATH\codeigniter4\framework\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('penjualan/index', [], true)
+ 5 APPPATH\Controllers\Penjualan.php(30): view('penjualan/index', [...])
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Penjualan->index()
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjualan))
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 04:21:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-27 04:21:21 --> ErrorException: Undefined array key "PenjualanID"
+in APPPATH\Views\penjualan\index.php on line 229.
+ 1 APPPATH\Views\penjualan\index.php(229): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "PenjualanID"', 'D:\\ci4\\app\\Views\\penjualan\\index.php', 229)
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(228): include('D:\\ci4\\app\\Views\\penjualan\\index.php')
+ 3 VENDORPATH\codeigniter4\framework\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('penjualan/index', [], true)
+ 5 APPPATH\Controllers\Penjualan.php(30): view('penjualan/index', [...])
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Penjualan->index()
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjualan))
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 04:21:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:25:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:46:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:46:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:50:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:50:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:51:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:51:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:51:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:51:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:51:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:51:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:52:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:52:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:52:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:52:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:52:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:52:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:52:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:52:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:52:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:53:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:53:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:53:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:53:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-27 04:53:19 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Views\pengguna\edit.php on line 132.
+ 1 APPPATH\Views\pengguna\edit.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\ci4\\app\\Views\\pengguna\\edit.php', 132)
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(228): include('D:\\ci4\\app\\Views\\pengguna\\edit.php')
+ 3 VENDORPATH\codeigniter4\framework\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pengguna/edit', [], true)
+ 5 APPPATH\Controllers\Pengguna.php(82): view('pengguna/edit', [...])
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Pengguna->edit('dinda1')
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengguna))
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 04:53:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:55:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:55:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:55:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:55:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:55:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:57:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:59:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:59:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:59:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 04:59:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:00:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:00:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:00:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:00:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:00:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:00:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:00:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:00:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:00:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:00:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:00:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:00:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:01:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:01:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:01:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:01:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:01:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:01:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:01:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:01:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:01:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:01:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:01:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:02:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:02:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:02:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:02:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:02:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:02:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:02:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:02:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:02:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:03:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:03:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:03:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:03:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:03:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:03:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:03:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:03:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:03:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:03:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:04:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:04:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:04:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:04:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:04:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:04:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:04:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:05:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:07:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:07:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:07:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:07:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:07:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:07:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:07:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:08:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:08:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:08:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:15:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:16:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:16:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:16:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:19:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:21:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:21:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:21:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-27 05:21:08 --> Error: Class "App\Models\TransaksiModel" not found
+in APPPATH\Controllers\Penjualan.php on line 19.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 05:21:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:21:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:21:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-27 05:21:53 --> Error: Call to a member function findAll() on null
+in APPPATH\Controllers\Penjualan.php on line 26.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Penjualan->index()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjualan))
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 05:22:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:22:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:22:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-27 05:22:09 --> ErrorException: Undefined variable $select
+in APPPATH\Models\PenjualanModel.php on line 45.
+ 1 APPPATH\Models\PenjualanModel.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $select', 'D:\\ci4\\app\\Models\\PenjualanModel.php', 45)
+ 2 APPPATH\Controllers\Penjualan.php(33): App\Models\PenjualanModel->getPenjualanDetail()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Penjualan->index()
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjualan))
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 05:24:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:24:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:24:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-27 05:24:09 --> Error: Class "App\Models\TransaksiModel" not found
+in APPPATH\Controllers\Penjualan.php on line 19.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 05:26:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:26:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:26:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-27 05:26:22 --> Error: Class "App\Models\TransaksiModel" not found
+in APPPATH\Controllers\Penjualan.php on line 19.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 05:26:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-27 05:26:25 --> Error: Class "App\Models\TransaksiModel" not found
+in APPPATH\Controllers\Penjualan.php on line 19.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 05:26:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-27 05:26:26 --> Error: Class "App\Models\TransaksiModel" not found
+in APPPATH\Controllers\Penjualan.php on line 19.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 05:27:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:27:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 05:27:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-27 05:27:14 --> Error: Class "App\Models\TransaksiModel" not found
+in APPPATH\Controllers\Penjualan.php on line 19.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 06:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 06:44:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 06:44:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 06:44:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 06:44:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-02-27 06:44:20 --> Error: Class "App\Models\TransaksiModel" not found
+in APPPATH\Controllers\Penjualan.php on line 19.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 06:48:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 06:48:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-27 06:48:27 --> Error: Call to a member function findAll() on null
+in APPPATH\Controllers\Penjualan.php on line 27.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Penjualan->index()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjualan))
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 06:48:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 06:48:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-27 06:48:40 --> ErrorException: Undefined variable $select
+in APPPATH\Models\PenjualanModel.php on line 45.
+ 1 APPPATH\Models\PenjualanModel.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $select', 'D:\\ci4\\app\\Models\\PenjualanModel.php', 45)
+ 2 APPPATH\Controllers\Penjualan.php(35): App\Models\PenjualanModel->getPenjualanDetail()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Penjualan->index()
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjualan))
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 06:49:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 06:49:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-27 06:49:41 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Builder::joim()
+in APPPATH\Models\PenjualanModel.php on line 56.
+ 1 APPPATH\Controllers\Penjualan.php(35): App\Models\PenjualanModel->getPenjualanDetail()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Penjualan->index()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjualan))
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 06:49:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 06:49:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-27 06:49:51 --> ErrorException: Undefined variable $totalHarga
+in APPPATH\Controllers\Penjualan.php on line 39.
+ 1 APPPATH\Controllers\Penjualan.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalHarga', 'D:\\ci4\\app\\Controllers\\Penjualan.php', 39)
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Penjualan->index()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjualan))
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 06:50:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 06:50:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 06:51:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 06:52:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 06:52:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 07:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:01:48 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:02:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:02:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:02:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:02:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:03:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:03:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:03:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 07:03:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 07:03:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 07:03:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 07:03:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 07:03:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:03:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 07:12:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:12:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-27 07:12:18 --> ErrorException: Attempt to read property "total_harga" on array
+in APPPATH\Views\penjualan\index.php on line 226.
+ 1 APPPATH\Views\penjualan\index.php(226): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "total_harga" on array', 'D:\\ci4\\app\\Views\\penjualan\\index.php', 226)
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(228): include('D:\\ci4\\app\\Views\\penjualan\\index.php')
+ 3 VENDORPATH\codeigniter4\framework\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Penjualan/index', [], true)
+ 5 APPPATH\Controllers\Penjualan.php(42): view('Penjualan/index', [...])
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Penjualan->index()
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjualan))
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:12:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:12:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:14:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:14:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:16:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:16:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-27 07:16:13 --> Error: Call to a member function findAll() on null
+in APPPATH\Controllers\Penjualan.php on line 27.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Penjualan->index()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjualan))
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:23:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 07:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:23:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-27 07:23:47 --> ErrorException: Undefined variable $select
+in APPPATH\Models\PenjualanModel.php on line 45.
+ 1 APPPATH\Models\PenjualanModel.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $select', 'D:\\ci4\\app\\Models\\PenjualanModel.php', 45)
+ 2 APPPATH\Controllers\Penjualan.php(35): App\Models\PenjualanModel->getPenjualanDetail()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Penjualan->index()
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjualan))
+ 5 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:24:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:24:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-27 07:24:17 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Builder::joim()
+in APPPATH\Models\PenjualanModel.php on line 56.
+ 1 APPPATH\Controllers\Penjualan.php(35): App\Models\PenjualanModel->getPenjualanDetail()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Penjualan->index()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjualan))
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:24:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-27 07:24:27 --> ErrorException: Undefined variable $totalHarga
+in APPPATH\Controllers\Penjualan.php on line 39.
+ 1 APPPATH\Controllers\Penjualan.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalHarga', 'D:\\ci4\\app\\Controllers\\Penjualan.php', 39)
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Penjualan->index()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjualan))
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:24:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:24:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:33:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:33:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:33:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 07:33:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 07:34:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:34:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:34:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:34:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:34:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:34:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:34:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:34:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:36:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:36:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:36:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:36:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:37:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:37:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:37:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:37:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:37:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:37:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:38:11 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:38:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:38:39 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:40:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:41:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:41:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:42:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:42:03 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:42:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:42:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:42:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:42:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:43:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:43:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:43:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:43:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:43:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:43:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:51:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-27 07:51:50 --> ErrorException: Undefined array key "namaPelanggan"
+in APPPATH\Views\penjualan\index.php on line 224.
+ 1 APPPATH\Views\penjualan\index.php(224): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "namaPelanggan"', 'D:\\ci4\\app\\Views\\penjualan\\index.php', 224)
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(228): include('D:\\ci4\\app\\Views\\penjualan\\index.php')
+ 3 VENDORPATH\codeigniter4\framework\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Penjualan/index', [], true)
+ 5 APPPATH\Controllers\Penjualan.php(42): view('Penjualan/index', [...])
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Penjualan->index()
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjualan))
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:52:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:52:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-27 07:52:16 --> ErrorException: Undefined array key "namaPelanggan"
+in APPPATH\Views\penjualan\index.php on line 224.
+ 1 APPPATH\Views\penjualan\index.php(224): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "namaPelanggan"', 'D:\\ci4\\app\\Views\\penjualan\\index.php', 224)
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(228): include('D:\\ci4\\app\\Views\\penjualan\\index.php')
+ 3 VENDORPATH\codeigniter4\framework\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Penjualan/index', [], true)
+ 5 APPPATH\Controllers\Penjualan.php(42): view('Penjualan/index', [...])
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Penjualan->index()
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjualan))
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:52:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:52:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-27 07:52:24 --> ErrorException: Undefined array key "namaProduk"
+in APPPATH\Views\penjualan\index.php on line 227.
+ 1 APPPATH\Views\penjualan\index.php(227): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "namaProduk"', 'D:\\ci4\\app\\Views\\penjualan\\index.php', 227)
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(228): include('D:\\ci4\\app\\Views\\penjualan\\index.php')
+ 3 VENDORPATH\codeigniter4\framework\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Penjualan/index', [], true)
+ 5 APPPATH\Controllers\Penjualan.php(42): view('Penjualan/index', [...])
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Penjualan->index()
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjualan))
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:52:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:52:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-27 07:52:54 --> ErrorException: Undefined variable $usr
+in APPPATH\Views\penjualan\index.php on line 247.
+ 1 APPPATH\Views\penjualan\index.php(247): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usr', 'D:\\ci4\\app\\Views\\penjualan\\index.php', 247)
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(228): include('D:\\ci4\\app\\Views\\penjualan\\index.php')
+ 3 VENDORPATH\codeigniter4\framework\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Penjualan/index', [], true)
+ 5 APPPATH\Controllers\Penjualan.php(42): view('Penjualan/index', [...])
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Penjualan->index()
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjualan))
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:53:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 07:53:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:53:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-27 07:53:38 --> ErrorException: Undefined variable $usr
+in APPPATH\Views\penjualan\index.php on line 247.
+ 1 APPPATH\Views\penjualan\index.php(247): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usr', 'D:\\ci4\\app\\Views\\penjualan\\index.php', 247)
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(228): include('D:\\ci4\\app\\Views\\penjualan\\index.php')
+ 3 VENDORPATH\codeigniter4\framework\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Penjualan/index', [], true)
+ 5 APPPATH\Controllers\Penjualan.php(42): view('Penjualan/index', [...])
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Penjualan->index()
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjualan))
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:53:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:53:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:55:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:55:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-27 07:55:06 --> ErrorException: Undefined array key "namaPelanggan"
+in APPPATH\Views\penjualan\index.php on line 224.
+ 1 APPPATH\Views\penjualan\index.php(224): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "namaPelanggan"', 'D:\\ci4\\app\\Views\\penjualan\\index.php', 224)
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(228): include('D:\\ci4\\app\\Views\\penjualan\\index.php')
+ 3 VENDORPATH\codeigniter4\framework\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Penjualan/index', [], true)
+ 5 APPPATH\Controllers\Penjualan.php(42): view('Penjualan/index', [...])
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Penjualan->index()
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjualan))
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:55:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:55:19 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:55:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:55:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:55:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:55:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:56:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:56:02 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:56:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:57:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 07:57:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:57:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:58:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:58:06 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:58:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:58:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-27 07:58:24 --> ErrorException: Undefined array key "namaProduk"
+in APPPATH\Views\penjualan\index.php on line 227.
+ 1 APPPATH\Views\penjualan\index.php(227): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "namaProduk"', 'D:\\ci4\\app\\Views\\penjualan\\index.php', 227)
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(228): include('D:\\ci4\\app\\Views\\penjualan\\index.php')
+ 3 VENDORPATH\codeigniter4\framework\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Penjualan/index', [], true)
+ 5 APPPATH\Controllers\Penjualan.php(42): view('Penjualan/index', [...])
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Penjualan->index()
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjualan))
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 07:58:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 07:58:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 08:00:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 08:00:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 08:00:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 08:00:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 08:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 08:01:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 08:03:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 08:03:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 08:04:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 08:04:24 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 08:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 08:04:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 08:05:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 08:05:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 08:05:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 08:05:32 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 08:05:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 08:05:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 08:10:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 08:10:30 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-27 08:10:30 --> ErrorException: Undefined variable $total_harga
+in APPPATH\Views\penjualan\index.php on line 254.
+ 1 APPPATH\Views\penjualan\index.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_harga', 'D:\\ci4\\app\\Views\\penjualan\\index.php', 254)
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(228): include('D:\\ci4\\app\\Views\\penjualan\\index.php')
+ 3 VENDORPATH\codeigniter4\framework\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Penjualan/index', [], true)
+ 5 APPPATH\Controllers\Penjualan.php(42): view('Penjualan/index', [...])
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Penjualan->index()
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjualan))
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 08:10:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 08:10:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 08:12:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 08:12:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-27 08:12:37 --> ErrorException: Undefined variable $totalHarga
+in APPPATH\Controllers\Penjualan.php on line 39.
+ 1 APPPATH\Controllers\Penjualan.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalHarga', 'D:\\ci4\\app\\Controllers\\Penjualan.php', 39)
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Penjualan->index()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjualan))
+ 4 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 08:12:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 08:12:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-27 08:12:58 --> ErrorException: Undefined variable $total_harga
+in APPPATH\Views\penjualan\index.php on line 254.
+ 1 APPPATH\Views\penjualan\index.php(254): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total_harga', 'D:\\ci4\\app\\Views\\penjualan\\index.php', 254)
+ 2 VENDORPATH\codeigniter4\framework\system\View\View.php(228): include('D:\\ci4\\app\\Views\\penjualan\\index.php')
+ 3 VENDORPATH\codeigniter4\framework\system\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Penjualan/index', [], true)
+ 5 APPPATH\Controllers\Penjualan.php(42): view('Penjualan/index', [...])
+ 6 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): App\Controllers\Penjualan->index()
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penjualan))
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 08:13:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 08:13:15 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 08:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 08:13:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 08:13:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 08:13:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 08:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 08:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-27 08:13:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 08:13:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 08:14:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 08:14:27 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-27 08:14:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-02-27 08:14:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Penjualan::$penjualanModel is deprecated in APPPATH\Controllers\Penjualan.php on line 20.
+ 1 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(913): App\Controllers\Penjualan->__construct()
+ 2 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')

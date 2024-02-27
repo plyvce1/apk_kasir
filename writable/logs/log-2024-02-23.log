@@ -1,0 +1,1165 @@
+INFO - 2024-02-23 00:16:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 00:16:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 00:16:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 00:16:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 00:16:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 00:17:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 00:19:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 00:19:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 00:23:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 00:23:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 00:23:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 00:24:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 00:25:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 00:25:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 00:25:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 00:26:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 00:26:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 00:29:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 00:29:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 00:29:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 00:30:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 00:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 00:30:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 00:31:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-23 00:31:29 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_kasir', 3306, '', 0)
+#1 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\ci4\vendor\codeigniter4\framework\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\ci4\vendor\codeigniter4\framework\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, '4')
+#6 D:\ci4\vendor\myth\auth\src\Authentication\AuthenticationBase.php(130): CodeIgniter\BaseModel->find('4')
+#7 D:\ci4\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+#8 D:\ci4\vendor\myth\auth\src\Filters\LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+#9 D:\ci4\vendor\codeigniter4\framework\system\Filters\Filters.php(182): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#10 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('penjualan', 'before')
+#11 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 D:\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\i...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\ci4\vendor\codeigniter4\framework\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\ci4\vendor\codeigniter4\framework\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, '4')
+#5 D:\ci4\vendor\myth\auth\src\Authentication\AuthenticationBase.php(130): CodeIgniter\BaseModel->find('4')
+#6 D:\ci4\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+#7 D:\ci4\vendor\myth\auth\src\Filters\LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+#8 D:\ci4\vendor\codeigniter4\framework\system\Filters\Filters.php(182): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#9 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('penjualan', 'before')
+#10 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\i...')
+#13 {main}
+CRITICAL - 2024-02-23 00:31:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php on line 428.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 3 VENDORPATH\codeigniter4\framework\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 VENDORPATH\codeigniter4\framework\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, '4')
+ 5 VENDORPATH\myth\auth\src\Authentication\AuthenticationBase.php(130): CodeIgniter\BaseModel->find('4')
+ 6 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+ 7 VENDORPATH\myth\auth\src\Filters\LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+ 8 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(182): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('penjualan', 'before')
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-23 00:32:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-23 00:32:06 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_kasir', 3306, '', 0)
+#1 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\ci4\vendor\codeigniter4\framework\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\ci4\vendor\codeigniter4\framework\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, '4')
+#6 D:\ci4\vendor\myth\auth\src\Authentication\AuthenticationBase.php(130): CodeIgniter\BaseModel->find('4')
+#7 D:\ci4\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+#8 D:\ci4\vendor\myth\auth\src\Filters\LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+#9 D:\ci4\vendor\codeigniter4\framework\system\Filters\Filters.php(182): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#10 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('penjualan', 'before')
+#11 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 D:\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\i...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\ci4\vendor\codeigniter4\framework\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\ci4\vendor\codeigniter4\framework\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, '4')
+#5 D:\ci4\vendor\myth\auth\src\Authentication\AuthenticationBase.php(130): CodeIgniter\BaseModel->find('4')
+#6 D:\ci4\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+#7 D:\ci4\vendor\myth\auth\src\Filters\LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+#8 D:\ci4\vendor\codeigniter4\framework\system\Filters\Filters.php(182): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#9 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('penjualan', 'before')
+#10 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\i...')
+#13 {main}
+CRITICAL - 2024-02-23 00:32:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php on line 428.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 3 VENDORPATH\codeigniter4\framework\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 VENDORPATH\codeigniter4\framework\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, '4')
+ 5 VENDORPATH\myth\auth\src\Authentication\AuthenticationBase.php(130): CodeIgniter\BaseModel->find('4')
+ 6 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+ 7 VENDORPATH\myth\auth\src\Filters\LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+ 8 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(182): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('penjualan', 'before')
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-23 00:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 00:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 00:35:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-23 00:35:42 --> Error connecting to the database: mysqli_sql_exception: Host 'localhost' is not allowed to connect to this MariaDB server in D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_kasir', 3306, '', 0)
+#1 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\ci4\vendor\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\ci4\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 D:\ci4\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#7 D:\ci4\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#8 D:\ci4\vendor\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#9 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+#10 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#11 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 D:\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\i...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Host 'localhost' is not allowed to connect to this MariaDB server in D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\ci4\vendor\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\ci4\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#5 D:\ci4\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#6 D:\ci4\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#7 D:\ci4\vendor\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#8 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+#9 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#10 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\i...')
+#13 {main}
+CRITICAL - 2024-02-23 00:35:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Host 'localhost' is not allowed to connect to this MariaDB server
+in VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php on line 428.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 3 VENDORPATH\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 4 VENDORPATH\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 5 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 6 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 7 VENDORPATH\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-23 00:49:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 00:49:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 00:50:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-23 00:50:04 --> mysqli_sql_exception: Table 'db_kasir.users' doesn't exist in D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\ci4\vendor\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\ci4\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 D:\ci4\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#7 D:\ci4\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#8 D:\ci4\vendor\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#9 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+#10 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#11 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 D:\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\i...')
+#14 {main}
+CRITICAL - 2024-02-23 00:50:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_kasir.users' doesn't exist
+in VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php on line 647.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 2 VENDORPATH\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 VENDORPATH\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 5 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 6 VENDORPATH\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-23 00:50:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_kasir.users' doesn't exist
+in VENDORPATH\codeigniter4\framework\system\Database\MySQLi\Connection.php on line 311.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `username` = \'melda123\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 2 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `username` = \'melda123\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 3 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 4 VENDORPATH\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 VENDORPATH\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 7 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 8 VENDORPATH\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+11 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-23 00:50:04 --> [Caused by] mysqli_sql_exception: Table 'db_kasir.users' doesn't exist
+in VENDORPATH\codeigniter4\framework\system\Database\MySQLi\Connection.php on line 306.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `users`
+WHERE `username` = \'melda123\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', 0)
+ 2 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `username` = \'melda123\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 3 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `username` = \'melda123\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 4 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 5 VENDORPATH\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 VENDORPATH\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 8 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 9 VENDORPATH\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+11 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+12 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-23 00:54:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-23 00:54:20 --> mysqli_sql_exception: Table 'db_kasir.users' doesn't exist in D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\ci4\vendor\codeigniter4\framework\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\ci4\vendor\codeigniter4\framework\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, '4')
+#6 D:\ci4\vendor\myth\auth\src\Authentication\AuthenticationBase.php(130): CodeIgniter\BaseModel->find('4')
+#7 D:\ci4\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+#8 D:\ci4\vendor\myth\auth\src\Filters\LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+#9 D:\ci4\vendor\codeigniter4\framework\system\Filters\Filters.php(182): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#10 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('', 'before')
+#11 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 D:\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\i...')
+#14 {main}
+CRITICAL - 2024-02-23 00:54:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_kasir.users' doesn't exist
+in VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php on line 647.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 2 VENDORPATH\codeigniter4\framework\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 3 VENDORPATH\codeigniter4\framework\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, '4')
+ 4 VENDORPATH\myth\auth\src\Authentication\AuthenticationBase.php(130): CodeIgniter\BaseModel->find('4')
+ 5 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+ 6 VENDORPATH\myth\auth\src\Filters\LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+ 7 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(182): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('', 'before')
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-23 00:54:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_kasir.users' doesn't exist
+in VENDORPATH\codeigniter4\framework\system\Database\MySQLi\Connection.php on line 311.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'4\'')
+ 2 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'4\'')
+ 3 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 4 VENDORPATH\codeigniter4\framework\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 5 VENDORPATH\codeigniter4\framework\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, '4')
+ 6 VENDORPATH\myth\auth\src\Authentication\AuthenticationBase.php(130): CodeIgniter\BaseModel->find('4')
+ 7 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+ 8 VENDORPATH\myth\auth\src\Filters\LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+ 9 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(182): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('', 'before')
+11 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-23 00:54:20 --> [Caused by] mysqli_sql_exception: Table 'db_kasir.users' doesn't exist
+in VENDORPATH\codeigniter4\framework\system\Database\MySQLi\Connection.php on line 306.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'4\'', 0)
+ 2 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'4\'')
+ 3 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = \'4\'')
+ 4 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 5 VENDORPATH\codeigniter4\framework\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 6 VENDORPATH\codeigniter4\framework\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, '4')
+ 7 VENDORPATH\myth\auth\src\Authentication\AuthenticationBase.php(130): CodeIgniter\BaseModel->find('4')
+ 8 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+ 9 VENDORPATH\myth\auth\src\Filters\LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+10 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(182): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+11 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('', 'before')
+12 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-23 00:55:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 00:55:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 00:56:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-23 00:56:04 --> mysqli_sql_exception: Table 'db_kasir.users' doesn't exist in engine in D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\ci4\vendor\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\ci4\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 D:\ci4\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#7 D:\ci4\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#8 D:\ci4\vendor\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#9 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+#10 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#11 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 D:\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\i...')
+#14 {main}
+CRITICAL - 2024-02-23 00:56:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_kasir.users' doesn't exist in engine
+in VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php on line 647.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 2 VENDORPATH\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 VENDORPATH\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 5 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 6 VENDORPATH\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-23 00:56:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_kasir.users' doesn't exist in engine
+in VENDORPATH\codeigniter4\framework\system\Database\MySQLi\Connection.php on line 311.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `username` = \'melda123\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 2 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `username` = \'melda123\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 3 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 4 VENDORPATH\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 VENDORPATH\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 7 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 8 VENDORPATH\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+11 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-23 00:56:04 --> [Caused by] mysqli_sql_exception: Table 'db_kasir.users' doesn't exist in engine
+in VENDORPATH\codeigniter4\framework\system\Database\MySQLi\Connection.php on line 306.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `users`
+WHERE `username` = \'melda123\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', 0)
+ 2 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `username` = \'melda123\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 3 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `username` = \'melda123\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 4 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 5 VENDORPATH\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 VENDORPATH\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 8 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 9 VENDORPATH\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+11 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+12 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-23 00:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 00:56:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 01:09:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 01:09:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 01:09:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-23 01:09:36 --> mysqli_sql_exception: Table 'db_kasir.users' doesn't exist in engine in D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\ci4\vendor\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\ci4\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 D:\ci4\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#7 D:\ci4\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#8 D:\ci4\vendor\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#9 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+#10 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#11 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 D:\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\i...')
+#14 {main}
+CRITICAL - 2024-02-23 01:09:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_kasir.users' doesn't exist in engine
+in VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php on line 647.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 2 VENDORPATH\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 VENDORPATH\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 5 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 6 VENDORPATH\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-23 01:09:36 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_kasir.users' doesn't exist in engine
+in VENDORPATH\codeigniter4\framework\system\Database\MySQLi\Connection.php on line 311.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `username` = \'melda123\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 2 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `username` = \'melda123\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 3 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 4 VENDORPATH\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 VENDORPATH\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 7 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 8 VENDORPATH\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+11 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-23 01:09:36 --> [Caused by] mysqli_sql_exception: Table 'db_kasir.users' doesn't exist in engine
+in VENDORPATH\codeigniter4\framework\system\Database\MySQLi\Connection.php on line 306.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `users`
+WHERE `username` = \'melda123\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', 0)
+ 2 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `username` = \'melda123\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 3 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `username` = \'melda123\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 4 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 5 VENDORPATH\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 VENDORPATH\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 8 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 9 VENDORPATH\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+11 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+12 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-23 01:12:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-23 01:12:25 --> mysqli_sql_exception: Table 'db_kasir.users' doesn't exist in engine in D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\ci4\vendor\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\ci4\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 D:\ci4\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#7 D:\ci4\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#8 D:\ci4\vendor\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#9 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+#10 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#11 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 D:\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\i...')
+#14 {main}
+CRITICAL - 2024-02-23 01:12:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_kasir.users' doesn't exist in engine
+in VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php on line 647.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 2 VENDORPATH\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 VENDORPATH\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 5 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 6 VENDORPATH\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-23 01:12:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_kasir.users' doesn't exist in engine
+in VENDORPATH\codeigniter4\framework\system\Database\MySQLi\Connection.php on line 311.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `username` = \'melda123\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 2 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `username` = \'melda123\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 3 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 4 VENDORPATH\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 VENDORPATH\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 7 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 8 VENDORPATH\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+11 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-23 01:12:25 --> [Caused by] mysqli_sql_exception: Table 'db_kasir.users' doesn't exist in engine
+in VENDORPATH\codeigniter4\framework\system\Database\MySQLi\Connection.php on line 306.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `users`
+WHERE `username` = \'melda123\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', 0)
+ 2 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `username` = \'melda123\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 3 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `username` = \'melda123\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 4 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 5 VENDORPATH\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 VENDORPATH\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 8 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 9 VENDORPATH\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+11 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+12 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-23 02:26:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-23 02:26:41 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'db_kasir' in D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_kasir', 3306, '', 0)
+#1 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\ci4\vendor\codeigniter4\framework\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\ci4\vendor\codeigniter4\framework\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, '4')
+#6 D:\ci4\vendor\myth\auth\src\Authentication\AuthenticationBase.php(130): CodeIgniter\BaseModel->find('4')
+#7 D:\ci4\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+#8 D:\ci4\vendor\myth\auth\src\Filters\LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+#9 D:\ci4\vendor\codeigniter4\framework\system\Filters\Filters.php(182): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#10 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('', 'before')
+#11 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 D:\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\i...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'db_kasir' in D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\ci4\vendor\codeigniter4\framework\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\ci4\vendor\codeigniter4\framework\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, '4')
+#5 D:\ci4\vendor\myth\auth\src\Authentication\AuthenticationBase.php(130): CodeIgniter\BaseModel->find('4')
+#6 D:\ci4\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+#7 D:\ci4\vendor\myth\auth\src\Filters\LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+#8 D:\ci4\vendor\codeigniter4\framework\system\Filters\Filters.php(182): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#9 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('', 'before')
+#10 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\i...')
+#13 {main}
+CRITICAL - 2024-02-23 02:26:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'db_kasir'
+in VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php on line 428.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 3 VENDORPATH\codeigniter4\framework\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 VENDORPATH\codeigniter4\framework\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, '4')
+ 5 VENDORPATH\myth\auth\src\Authentication\AuthenticationBase.php(130): CodeIgniter\BaseModel->find('4')
+ 6 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+ 7 VENDORPATH\myth\auth\src\Filters\LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+ 8 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(182): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('', 'before')
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-23 03:57:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-23 03:57:19 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'db_kasir' in D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'db_kasir', 3306, '', 0)
+#1 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\ci4\vendor\codeigniter4\framework\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\ci4\vendor\codeigniter4\framework\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, '4')
+#6 D:\ci4\vendor\myth\auth\src\Authentication\AuthenticationBase.php(130): CodeIgniter\BaseModel->find('4')
+#7 D:\ci4\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+#8 D:\ci4\vendor\myth\auth\src\Filters\LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+#9 D:\ci4\vendor\codeigniter4\framework\system\Filters\Filters.php(182): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#10 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('', 'before')
+#11 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 D:\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\i...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'db_kasir' in D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\ci4\vendor\codeigniter4\framework\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\ci4\vendor\codeigniter4\framework\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, '4')
+#5 D:\ci4\vendor\myth\auth\src\Authentication\AuthenticationBase.php(130): CodeIgniter\BaseModel->find('4')
+#6 D:\ci4\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+#7 D:\ci4\vendor\myth\auth\src\Filters\LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+#8 D:\ci4\vendor\codeigniter4\framework\system\Filters\Filters.php(182): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#9 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('', 'before')
+#10 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\i...')
+#13 {main}
+CRITICAL - 2024-02-23 03:57:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'db_kasir'
+in VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php on line 428.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 3 VENDORPATH\codeigniter4\framework\system\Model.php(199): CodeIgniter\Database\BaseBuilder->get()
+ 4 VENDORPATH\codeigniter4\framework\system\BaseModel.php(577): CodeIgniter\Model->doFind(true, '4')
+ 5 VENDORPATH\myth\auth\src\Authentication\AuthenticationBase.php(130): CodeIgniter\BaseModel->find('4')
+ 6 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+ 7 VENDORPATH\myth\auth\src\Filters\LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+ 8 VENDORPATH\codeigniter4\framework\system\Filters\Filters.php(182): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(474): CodeIgniter\Filters\Filters->run('', 'before')
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-23 06:26:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 06:26:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 06:26:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-23 06:26:24 --> mysqli_sql_exception: Table 'db_kasir.users' doesn't exist in D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\ci4\vendor\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\ci4\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 D:\ci4\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#7 D:\ci4\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#8 D:\ci4\vendor\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#9 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+#10 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#11 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 D:\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\i...')
+#14 {main}
+CRITICAL - 2024-02-23 06:26:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_kasir.users' doesn't exist
+in VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php on line 647.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 2 VENDORPATH\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 VENDORPATH\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 5 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 6 VENDORPATH\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-23 06:26:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_kasir.users' doesn't exist
+in VENDORPATH\codeigniter4\framework\system\Database\MySQLi\Connection.php on line 311.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `username` = \'melda123\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 2 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `username` = \'melda123\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 3 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 4 VENDORPATH\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 VENDORPATH\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 7 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 8 VENDORPATH\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+11 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-23 06:26:24 --> [Caused by] mysqli_sql_exception: Table 'db_kasir.users' doesn't exist
+in VENDORPATH\codeigniter4\framework\system\Database\MySQLi\Connection.php on line 306.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `users`
+WHERE `username` = \'melda123\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', 0)
+ 2 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `username` = \'melda123\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 3 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `username` = \'melda123\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 4 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 5 VENDORPATH\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 VENDORPATH\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 8 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 9 VENDORPATH\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+11 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+12 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-23 06:26:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 06:26:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-23 06:26:59 --> mysqli_sql_exception: Table 'db_kasir.users' doesn't exist in D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\ci4\vendor\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\ci4\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 D:\ci4\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#7 D:\ci4\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#8 D:\ci4\vendor\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#9 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+#10 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#11 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 D:\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\i...')
+#14 {main}
+CRITICAL - 2024-02-23 06:26:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_kasir.users' doesn't exist
+in VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php on line 647.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 2 VENDORPATH\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 VENDORPATH\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 5 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 6 VENDORPATH\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-23 06:26:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_kasir.users' doesn't exist
+in VENDORPATH\codeigniter4\framework\system\Database\MySQLi\Connection.php on line 311.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `username` = \'melda\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 2 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `username` = \'melda\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 3 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 4 VENDORPATH\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 VENDORPATH\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 7 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 8 VENDORPATH\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+11 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-23 06:26:59 --> [Caused by] mysqli_sql_exception: Table 'db_kasir.users' doesn't exist
+in VENDORPATH\codeigniter4\framework\system\Database\MySQLi\Connection.php on line 306.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `users`
+WHERE `username` = \'melda\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', 0)
+ 2 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `username` = \'melda\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 3 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `username` = \'melda\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 4 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 5 VENDORPATH\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 VENDORPATH\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 8 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 9 VENDORPATH\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+11 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+12 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-23 06:45:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 06:45:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 06:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-23 06:45:56 --> mysqli_sql_exception: Table 'db_kasir.users' doesn't exist in D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\ci4\vendor\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\ci4\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 D:\ci4\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#7 D:\ci4\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#8 D:\ci4\vendor\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#9 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+#10 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#11 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 D:\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\i...')
+#14 {main}
+CRITICAL - 2024-02-23 06:45:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_kasir.users' doesn't exist
+in VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php on line 647.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 2 VENDORPATH\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 VENDORPATH\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 5 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 6 VENDORPATH\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-23 06:45:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_kasir.users' doesn't exist
+in VENDORPATH\codeigniter4\framework\system\Database\MySQLi\Connection.php on line 311.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `username` = \'melda123\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 2 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `username` = \'melda123\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 3 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 4 VENDORPATH\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 VENDORPATH\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 7 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 8 VENDORPATH\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+11 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-23 06:45:56 --> [Caused by] mysqli_sql_exception: Table 'db_kasir.users' doesn't exist
+in VENDORPATH\codeigniter4\framework\system\Database\MySQLi\Connection.php on line 306.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `users`
+WHERE `username` = \'melda123\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', 0)
+ 2 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `username` = \'melda123\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 3 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `username` = \'melda123\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 4 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 5 VENDORPATH\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 VENDORPATH\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 8 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 9 VENDORPATH\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+11 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+12 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-23 06:46:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 06:46:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-02-23 06:46:16 --> mysqli_sql_exception: Table 'db_kasir.users' doesn't exist in D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\ci4\vendor\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\ci4\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 D:\ci4\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#7 D:\ci4\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#8 D:\ci4\vendor\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#9 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+#10 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#11 D:\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\ci4\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 D:\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\i...')
+#14 {main}
+CRITICAL - 2024-02-23 06:46:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_kasir.users' doesn't exist
+in VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php on line 647.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 2 VENDORPATH\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 3 VENDORPATH\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 5 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 6 VENDORPATH\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 7 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 8 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-23 06:46:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'db_kasir.users' doesn't exist
+in VENDORPATH\codeigniter4\framework\system\Database\MySQLi\Connection.php on line 311.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `username` = \'melda123\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 2 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `username` = \'melda123\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 3 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 4 VENDORPATH\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 5 VENDORPATH\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 7 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 8 VENDORPATH\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 9 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+11 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+CRITICAL - 2024-02-23 06:46:16 --> [Caused by] mysqli_sql_exception: Table 'db_kasir.users' doesn't exist
+in VENDORPATH\codeigniter4\framework\system\Database\MySQLi\Connection.php on line 306.
+ 1 VENDORPATH\codeigniter4\framework\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `users`
+WHERE `username` = \'melda123\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', 0)
+ 2 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `username` = \'melda123\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 3 VENDORPATH\codeigniter4\framework\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `username` = \'melda123\'
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1')
+ 4 VENDORPATH\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 5 VENDORPATH\codeigniter4\framework\system\Model.php(270): CodeIgniter\Database\BaseBuilder->get()
+ 6 VENDORPATH\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 8 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 9 VENDORPATH\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+10 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(941): Myth\Auth\Controllers\AuthController->attemptLogin()
+11 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+12 VENDORPATH\codeigniter4\framework\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 VENDORPATH\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci4\\public\\index.php')
+INFO - 2024-02-23 06:48:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 06:48:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 06:48:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 06:49:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 06:49:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 06:49:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 06:49:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 06:49:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 06:49:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 06:49:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 06:49:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 06:49:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 06:50:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 06:50:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 06:50:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 06:53:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 06:54:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 06:55:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 07:01:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 07:02:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 07:03:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-02-23 07:03:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
